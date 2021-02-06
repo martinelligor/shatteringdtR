@@ -6,7 +6,8 @@
 #' @param nodes list. A list containing the tree nodes.
 #' @param left int. The left child of the parent node.
 #' @param right int. The right child of the parent node.
-#' @param parent int. The current node being analyzed.
+#' @param node int. The current node being analyzed
+#' @param parent int. The parent node of node.
 #' @param samples list. The number of dataset samples for each node of the tree.
 #' @param node_type string. The type of the node, e.g., leaf if it's a leaf node.
 #' @param shattering float. The shattering coefficient that are begin computed.

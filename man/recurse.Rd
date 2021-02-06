@@ -13,7 +13,9 @@ recurse(nodes, left, right, node, parent, samples, node_type, shattering, n_samp
 
 \item{right}{int. The right child of the parent node.}
 
-\item{parent}{int. The current node being analyzed.}
+\item{node}{int. The current node being analyzed}
+
+\item{parent}{int. The parent node of node.}
 
 \item{samples}{list. The number of dataset samples for each node of the tree.}
 
