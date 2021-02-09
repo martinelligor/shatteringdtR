@@ -17,8 +17,6 @@
 #'
 #' @return The calculus of the shattering coefficient.
 #'
-#' @examples chernoff_bound(rpart.tree)
-#'
 #' @export chernoff_bound
 recurse <- function(nodes, left, right, node, parent, samples, node_type, shattering, n_samples){
     if(((left %in% nodes) & (right %in% nodes)) & ((node_type[which(nodes == left)] == "<leaf>") & (node_type[which(nodes == right)] == "<leaf>"))){

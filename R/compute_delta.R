@@ -10,8 +10,6 @@
 #'
 #' @return computed delta for # of samples and epsilon given as input.
 #'
-#' @examples compute_delta(rpart.tree, 20000, 0.05)
-#'
 #' @export compute_delta
 compute_delta <- function(rpart.tree, samples, epsilon){
     shattering <- compute_shattering(rpart.tree, samples)

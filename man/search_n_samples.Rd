@@ -21,7 +21,3 @@ the number of samples needed to ensure learning.
 \description{
 Executes a binary search to find the best # of samples.
 }
-\examples{
-search_n_samples(rpart.tree, 16, 64, 0.05)
-
-}

@@ -11,8 +11,6 @@
 #'
 #' @return the delta and n_samples values.
 #'
-#' @examples search_delta_n_samples(rpart.tree, 20000, 1, 0.05)
-#'
 #' @export search_delta_n_samples
 search_delta_n_samples <- function(rpart.tree, n_samples, delta, epsilon){
     while(delta > epsilon){

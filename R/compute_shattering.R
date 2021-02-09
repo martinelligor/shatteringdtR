@@ -10,18 +10,19 @@
 #'
 #' @return The calculus of the shattering coefficient.
 #'
-#' @examples compute_shattering(rpart.tree, 20000)
-#'
 #' @export compute_shattering
 compute_shattering <- function(rpart.tree, n_samples){
-    root = as.integer(rownames(rpart.tree$frame))[1]
-    left_children = root*2
-    right_children = (root*2)+1
-    samples = rpart.tree$frame$wt
-    node_type = rpart.tree$frame$var
-    nodes = as.integer(rownames(rpart.tree$frame))
+    if(exists("rpart.tree")){
+        root = as.integer(rownames(rpart.tree$frame))[1]
+        left_children = root*2
+        right_children = (root*2)+1
+        samples = rpart.tree$frame$wt
+        node_type = rpart.tree$frame$var
+        nodes = as.integer(rownames(rpart.tree$frame))
 
-    shattering <- recurse(nodes, left_children, right_children, root, NULL, samples, node_type, NULL, n_samples)
+        shattering <- recurse(nodes, left_children, right_children, root, NULL, samples, node_type, NULL, n_samples)
 
-    return (shattering)
+        return (shattering)
+    }
+    stop("There is no rpart.tree object.")
 }

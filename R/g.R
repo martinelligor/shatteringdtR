@@ -10,8 +10,6 @@
 #'
 #' @return The calculus of G function for the inputs.
 #'
-#' @examples g(2, 20000)
-#'
 #' @export g
 g <- function(n, n_samples){
     return (n*(n_samples+1))

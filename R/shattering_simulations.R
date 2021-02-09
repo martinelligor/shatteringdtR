@@ -9,8 +9,6 @@
 #'
 #' @usage shattering_simulations(rpart.tree, n_experimentations=200000)
 #'
-#' @examples shattering_simulations(rpart.tree, n_experimentations=200000)
-#'
 #' @export shattering_simulations
 shattering_simulations <- function(rpart.tree, n_experimentations=200000){
     shatterings = NULL

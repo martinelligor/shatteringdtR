@@ -17,3 +17,4 @@ wine$Class <- as.factor(wine$Class)
 tree <- rpart(Class ~ ., data=wine, method="class")
 
 shattering <- compute_shattering(tree, 1000)
+chernoff_bound(tree)

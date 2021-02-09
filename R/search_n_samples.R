@@ -11,8 +11,6 @@
 #'
 #' @return the number of samples needed to ensure learning.
 #'
-#' @examples search_n_samples(rpart.tree, 16, 64, 0.05)
-#'
 #' @export search_n_samples
 search_n_samples <- function(rpart.tree, lower, upper, epsilon){
     mid_samples = (lower+upper)%/%2

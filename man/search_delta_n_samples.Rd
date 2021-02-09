@@ -21,7 +21,3 @@ the delta and n_samples values.
 \description{
 Search the # of samples to ensure learning given an epsilon.
 }
-\examples{
-search_delta_n_samples(rpart.tree, 20000, 1, 0.05)
-
-}

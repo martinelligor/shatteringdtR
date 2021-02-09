@@ -17,7 +17,3 @@ confidence_interval(rpart.tree, epsilon, max_confidence)
 Calculates # of samples needed to ensure learning with,
 a certain confidence interval simulated.
 }
-\examples{
-confidence_interval(rpart.tree)
-
-}

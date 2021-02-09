@@ -18,7 +18,3 @@ The calculus of G function for the inputs.
 Apply G(n) function on a given number (n) for a
 given # of samples (n_samples).
 }
-\examples{
-g(2, 20000)
-
-}

@@ -18,7 +18,3 @@ The calculus of the shattering coefficient.
 Using a recursion function as auxiliar function,
 calculates the shattering coefficient for a rpart decision tree.
 }
-\examples{
-compute_shattering(rpart.tree, 20000)
-
-}

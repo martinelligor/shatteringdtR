@@ -32,7 +32,3 @@ The calculus of the shattering coefficient.
 Using a recursion, calculates the shattering coefficient
 for a rpart decision tree.
 }
-\examples{
-chernoff_bound(rpart.tree)
-
-}

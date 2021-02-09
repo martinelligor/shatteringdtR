@@ -16,7 +16,3 @@ Calculates different values of shattering coefficient,
 varying # of samples to study the # of samples needed to ensure learning
 and plot this values.
 }
-\examples{
-shattering_simulations(rpart.tree, n_experimentations=200000)
-
-}

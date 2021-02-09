@@ -9,8 +9,6 @@
 #'
 #' @usage confidence_interval(rpart.tree, epsilon, max_confidence)
 #'
-#' @examples confidence_interval(rpart.tree)
-#'
 #' @export confidence_interval
 confidence_interval <- function(rpart.tree, epsilon=.05, max_confidence=.2){
     delta_confidence = NULL

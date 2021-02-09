@@ -19,7 +19,3 @@ computed delta for # of samples and epsilon given as input.
 \description{
 Calculates the delta for a given # of samples and value of epsilon.
 }
-\examples{
-compute_delta(rpart.tree, 20000, 0.05)
-
-}

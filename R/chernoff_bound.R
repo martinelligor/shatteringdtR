@@ -7,19 +7,22 @@
 #' @param n_experimentations int. The # of experimentations and samples to run.
 #' @param epsilon float. The epsilon to be used in the delta calculation.
 #'
-#' @usage chernoff_bound(rpart.tree, n_experimentations=200000, epsilon=.05)
-#'
-#' @examples chernoff_bound(rpart.tree, n_experimentations=200000, epsilon=.05)
+#' @usage chernoff_bound(rpart.tree, n_experimentations, epsilon)
 #'
 #' @export chernoff_bound
-chernoff_bound <- function(rpart.tree, n_experimentations=200000, epsilon=.05){
-    deltas = NULL
+chernoff_bound <- function(rpart.tree, n_experimentations=2000, epsilon=.05){
+    if(exists("rpart.tree")){
+        deltas = NULL
 
-    for (i in seq(1, n_experimentations)){
-        shattering <- compute_shattering(rpart.tree, i)
-        deltas <- c(deltas, 2*shattering*exp(-i*((epsilon**2)/4)))
+        for (i in seq(1, n_experimentations)){
+            shattering <- compute_shattering(rpart.tree, i)
+            deltas <- c(deltas, 2*shattering*exp(-i*((epsilon**2)/4)))
+        }
+
+        plot(deltas, main="Values of delta by # of samples",
+             ylab=expression(delta), xlab="# of samples")
+
+    } else{
+        stop("There is no object rpart.tree")
     }
-
-    plot(deltas, main="Values of delta by # of samples",
-         ylab=expression(delta), xlab="# of samples")
 }
