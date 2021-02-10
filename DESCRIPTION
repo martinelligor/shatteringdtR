@@ -1,5 +1,5 @@
 Package: shatteringdt
-Title: Provide SLT Tools for 'rpart' and 'tree' to study Decision Trees
+Title: Provide SLT Tools for 'rpart' and 'tree' to Study Decision Trees
 Version: 0.1.0
 Authors@R: 
     person(given = "Igor",
