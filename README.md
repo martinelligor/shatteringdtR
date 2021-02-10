@@ -1,6 +1,6 @@
 # shatteringdtR
 
-Useful tools to work with Statistical Learning Theory (SLT) over rpart and tree decision trees.
+Provide SLT Tools for 'rpart' and 'tree' to Study Decision Trees
 
 # Description
 
