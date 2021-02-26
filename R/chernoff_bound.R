@@ -9,6 +9,8 @@
 #'
 #' @usage chernoff_bound(rpart.tree, n_experimentations, epsilon)
 #'
+#' @return No return value, the function plots the chernoff bound.
+#'
 #' @export chernoff_bound
 chernoff_bound <- function(rpart.tree, n_experimentations=2000, epsilon=.05){
     if(exists("rpart.tree")){

@@ -9,6 +9,8 @@
 #'
 #' @usage shattering_simulations(rpart.tree, n_experimentations=200000)
 #'
+#' @return No return value, the function plot shattering simulations.
+#'
 #' @export shattering_simulations
 shattering_simulations <- function(rpart.tree, n_experimentations=200000){
     shatterings = NULL

@@ -9,6 +9,8 @@
 #'
 #' @usage confidence_interval(rpart.tree, epsilon, max_confidence)
 #'
+#' @return No return value, the function plot the confidence interval values.
+#'
 #' @export confidence_interval
 confidence_interval <- function(rpart.tree, epsilon=.05, max_confidence=.2){
     delta_confidence = NULL
