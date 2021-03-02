@@ -13,6 +13,9 @@ confidence_interval(rpart.tree, epsilon, max_confidence)
 
 \item{max_confidence}{int. The maximum confidence to achieve in 0.01 steps length.}
 }
+\value{
+No return value, the function plot the confidence interval values.
+}
 \description{
 Calculates # of samples needed to ensure learning with,
 a certain confidence interval simulated.

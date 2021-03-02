@@ -11,6 +11,9 @@ shattering_simulations(rpart.tree, n_experimentations=200000)
 
 \item{n_experimentations}{int. The # of experimentations and samples to run.}
 }
+\value{
+No return value, the function plot shattering simulations.
+}
 \description{
 Calculates different values of shattering coefficient,
 varying # of samples to study the # of samples needed to ensure learning

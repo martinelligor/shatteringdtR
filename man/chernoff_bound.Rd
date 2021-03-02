@@ -13,6 +13,9 @@ chernoff_bound(rpart.tree, n_experimentations, epsilon)
 
 \item{epsilon}{float. The epsilon to be used in the delta calculation.}
 }
+\value{
+No return value, the function plots the chernoff bound.
+}
 \description{
 Calculates different values of shattering coefficient and delta,
 varying # of samples to study the chernoff bound of SLT.
